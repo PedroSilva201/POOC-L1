@@ -14,9 +14,11 @@ rel="stylesheet">
 <body>
    <a th:href="@{/lista-clentes}"></a><span>Listagem de clentes:</span></a><br />
    <h1>Formulario de cadastro de um cliente!!</h1><br/>
+   
    <from th:action="@{/cadastrar}" method="post">
+   
    <input name="nome"placeholder="nome do cliente" /><br/>
-   <input name=""placeholder="telefone" /><br/>
+   <input name="numero"placeholder="telefone" /><br/>
    <input type="submit" />
    </from>
 

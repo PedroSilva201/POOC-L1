@@ -13,9 +13,12 @@ rel="stylesheet">
 </head>
 <body>
    <a th:each=@{/cadastrar}>Cadastrar mais algum clente</a><br />
-   <h1>Lista com todos os clientes!!!</h1><br/>
+   <h1>Lista com todos os clientes!!!</h1>
+   <br/>
    <div th:each="pessoa:${pessoas}">
-   <p><spam th:text="${pessoa.nome}"></spam>
+       <p>
+       <spam th:text="${pessoa.id}"></spam>
+       <spam th:text="${pessoa.nome}"></spam>
    </p>
     <br />
    </div>
